@@ -1,0 +1,51 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+.item-0{
+    background-color: rgb(0, 217, 255);
+    grid-area: header;
+}
+.item-1{
+    background-color: rgb(229, 255, 0);
+    grid-area: left;
+}
+.item-2{
+    background-color: rgb(212, 0, 255);
+    grid-area: center;
+}
+.item-3{
+    background-color: rgb(38, 0, 255);
+    grid-area: right;
+}
+.item-4{
+    background-color: rgb(255, 0, 0);
+    grid-area: footer;
+}
+.item-5{
+    background-color: rgb(0, 255, 13);
+    grid-area: link;
+}
+
+.child{
+    height: 100%;
+}
+
+.grid-cantainer{
+    /* border: 1px solid; */
+    /* gap: 4px; */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 200px 1fr 150px;
+    /* NB: senza contenuto, la seconda row (1fr) sparisce finchè non metto contenuto */
+    grid-template-areas: "header header header"
+                         "left center right"
+                         "footer footer link";
+    /* questo definisce la struttura della grid semanticamente, poi ad ogni child verrà attribuito uno dei nomi dati alla grid 
+    e automaticamente si posizioneranno nel posto scelto*/
+    height: 100%;
+}

@@ -1,0 +1,45 @@
+.item-0{
+    background-color: aqua;
+}
+.item-1{
+    background-color: rgb(229, 255, 0);
+}
+.item-2{
+    background-color: rgb(212, 0, 255);
+}
+.item-3{
+    background-color: rgb(38, 0, 255);
+}
+.item-4{
+    background-color: rgb(255, 0, 0);
+}
+.item-5{
+    background-color: rgb(0, 255, 13);
+}
+
+.child{
+    /* height: 100px; */
+    height: 100;
+}
+
+.grid-cantainer{
+    display: grid;
+    /* di default la grid ha un unica colonna e tante row quante sono i figli */
+    grid-template-columns: 200px 500px;
+    /* non viene dato un numero ma un template (una dimensione) ad ogni colonna che voglio aggiungere (px, %, fraction(proporzione come nel flex-grow)) */
+    grid-template-columns: 200px auto;
+    /* mettendo il secondo valore come auto la seconda colonna si espanderà per tutto lo spazio del contenitore */
+    grid-template-columns: 2fr 4fr 1fr;
+    /* fr indica le frazioni, l'intero è composto da 7 parti e la prima colonna sarà 2/7, la seconda 4/7 e la terza 1/7
+    utile quando lo schermo si rimpicciolisce */
+    grid-template-columns: 300px 4fr 1fr;
+    /* in questo caso la prima avrà misura fissa e lo spazio restante sarà frazionato tra le altre due in modo che quando lo schermo si restringe saranno proporzionali */
+    grid-template-rows: 100px 200px 300px;
+    /* definisce 3 righe i questo caso con misure (height) fisse */
+    grid-template-rows: 100px 200px;
+    /* tolgo una row */
+    gap: 4px;
+    gap: 4px 10px;
+    /* definisce uno stacco tra righe e colonne con due valori mentre con un valore da lo stesso a tutti */
+    border: 2px solid black;
+}

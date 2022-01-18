@@ -1,0 +1,40 @@
+/* modalità numerica e non semantica (come nel style css) che definisce la posizione degli elementi nella grid basansosi su righe e colonne */
+
+
+.item-0{
+    background-color: rgb(0, 217, 255);
+    grid-column: 1 / 4;
+    grid-row: 1;
+    /* questo posizionerà l'item-0 nella prima, seconda e terza colonna (mettendo da 1 a 4 perchè scrivendo 1/3 si fermerebbe all'inizio della terza colonna)
+    questo posiziona l'item-0 nella prima riga. */
+}
+.item-1{
+    background-color: rgb(229, 255, 0);
+    
+}
+.item-2{
+    background-color: rgb(212, 0, 255);
+    
+}
+.item-3{
+    background-color: rgb(38, 0, 255);
+    
+}
+.item-4{
+    background-color: rgb(255, 0, 0);
+    
+}
+.item-5{
+    background-color: rgb(0, 255, 13);
+    
+}
+
+.child{
+    height: 100%;
+}
+
+.grid-cantainer{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 300px 600px 200px;

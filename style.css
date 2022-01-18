@@ -39,7 +39,7 @@ body{
     /* border: 1px solid; */
     /* gap: 4px; */
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 475px 475px 475px;
     grid-template-rows: 200px 1fr 150px;
     /* NB: senza contenuto, la seconda row (1fr) sparisce finchè non metto contenuto */
     grid-template-areas: "header header header"
